@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Defender</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="menu">
+            <h1>🚀 COSMIC DEFENDER 🚀</h1>
+            <p class="subtitle">Захистіть Землю від інопланетного вторгнення!</p>
+            <button id="startBtn">ПОЧАТИ ГРУ</button>
+            <div class="controls">
+                <p><strong>Управління:</strong></p>
+                <p>← → або A D - рух</p>
+                <p>ПРОБІЛ - стрілянина</p>
+                <p>SHIFT - щит (обмежений)</p>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="600" class="hidden"></canvas>
+
+        <div id="gameOverOverlay" class="hidden">
+            <h2>GAME OVER</h2>
+            <p id="gameOverScore">Фінальний рахунок: 0</p>
+            <button id="restartBtn">ГРАТИ ЗНОВУ</button>
+        </div>
+
+        <div id="ui" class="hidden">
+            <div>❤️ Життя: <span id="lives">5</span></div>
+            <div>⭐ Очки: <span id="score">0</span></div>
+            <div>🛡️ Щит: <span id="shield">100</span>%</div>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/assets.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

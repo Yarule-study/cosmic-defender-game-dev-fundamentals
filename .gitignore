@@ -1,0 +1,25 @@
+# ======================
+# Operating systems
+# ======================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ======================
+# IDE / Editors
+# ======================
+.vscode/
+.idea/
+*.code-workspace
+
+# ======================
+# Logs / temp files
+# ======================
+*.log
+*.tmp
+*.temp

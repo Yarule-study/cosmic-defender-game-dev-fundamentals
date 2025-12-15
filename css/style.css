@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #0a0e27 0%, #1a1a2e 100%);
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+#gameContainer {
+    text-align: center;
+    position: relative;
+}
+
+canvas {
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    background: #000;
+    display: block;
+    margin: 0 auto;
+}
+
+#ui {
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.95);
+    padding: 40px;
+    border: 3px solid #00ffff;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 400px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+#gameOverOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.95);
+    padding: 40px;
+    border: 3px solid #ff0000;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 400px;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+}
+
+#gameOverOverlay h2 {
+    color: #ff4444;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+    margin-bottom: 20px;
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+#gameOverOverlay p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+button {
+    background: linear-gradient(to bottom, #00ffff 0%, #0099cc 100%);
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+h1 {
+    color: #00ffff;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+    margin-bottom: 20px;
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #aaa;
+}
+
+.controls {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.controls p {
+    margin: 8px 0;
+}
+
+/* Рівні видалені, стилі для levelInfo більше не використовуються */
